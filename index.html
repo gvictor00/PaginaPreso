@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+	<title>Sistema de busca de presos</title>
+</head>
+<body>
+	<header>
+		<table>
+			<tr>
+				<td>
+					<img src="policia-federal.gif" alt="Policia Federal" height="140">
+				</td>
+				<td>
+					<h1>Policia Federal</h1>
+					<h4>MINISTÉRIO DA JUSTIÇA E SEGURANÇA PÚBLICA</h4>
+				</td>
+			</tr>
+		</table>
+		<hr>
+	</header>
+	<section>
+		<table>
+			<h2>Informações do detento</h2>
+			<h5>*Informações obrigatórias</h5>
+			<br>
+			<form>
+				<tr>
+					<td>
+						<label for="reg">Numero do Registro*:</label><br>
+						<input type="text" name="reg" id="reg" placeholder="Número do processo">
+						<br><br>
+					</td>
+					<td>
+						<label for="dt_pris">Data da prisão*:</label>
+						<br>
+						<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa">
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="nome">Nome*:</label>					<br>
+						<input type="text" name="nome" size="40" id="name" placeholder="Digite o nome completo">
+						<br><br>	
+					</td>
+					<td>
+						<label for="dt_nasc">Data de nascimento*:</label>
+						<br>
+						<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa">
+						<br><br>
+					</td>
+					<td>
+						<label for="genero">Genero*:</label>
+						<br>
+						<select name="genero" id="genero" >
+							<option value = "f">Feminino</option>
+							<option value = "m">Masculino</option>
+						</select>
+						<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="cpf">CPF:</label>
+						<br>
+						<input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+						<br>		
+						<br>
+					</td>
+					<td>
+						<label for="rg">RG:</label>
+						<br>
+						<input type="text" name="rg" id="rg" placeholder="xxxxxxx">
+						<br>
+						<br>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="end">Endereço:</label><br>
+						<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "60">
+						<br><br>
+					</td>
+					<td>
+						<label for="comp">Complemento:</label><br>
+						<input type="text" name="comp" id="comp" placeholder="Numero/Apartamento" size = "40">
+						<br><br>
+					</td>
+					<td>
+						<label for="cid">Cidade:</label><br>
+						<input type="text" name="cid" id="comp" placeholder="Cidade">
+						<br><br>
+					</td>
+				</tr>
+
+				<!-- Botão de submit -->
+				<tr>
+					<td>
+						<br><br>
+						<button type="button" name="submit" onclick="check()"><h2>Buscar!</h2></button>
+					</td>
+				</tr>
+
+			</form>
+		</table>
+	</section>
+	<script type="text/javascript">
+		function check(){
+
+		// Dados do criminoso
+		var nome = "George Victor de Souza Alves";
+		var nasc = "29/01/1992";
+
+		// Dados fornecidos pelo usuario
+		var nome_input = document.getElementById('name').value;
+		var data_nascimento = document.getElementById('dt_nasc').value;
+
+		if(nome.toLowerCase() == nome_input.toLowerCase() && data_nascimento == nasc)
+		{
+			window.location.assign("ficha.html");
+		}
+		else
+		{
+			window.location.assign("not_found.html");
+		}
+	}
+</script>
+</body>
+</html>
+</DOCTYPE>
