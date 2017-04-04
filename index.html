@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="resultados/css/style.css">
 	<title>Sistema de busca de presos</title>
 </head>
 <body>
@@ -9,7 +9,7 @@
 		<table>
 			<tr>
 				<td>
-					<img src="policia-federal.gif" alt="Policia Federal" height="140">
+					<img src="resultados/policia-federal.gif" alt="Policia Federal" height="140">
 				</td>
 				<td>
 					<h1>Policia Federal</h1>
@@ -136,20 +136,25 @@
 		function check(){
 
 		// Dados do criminoso
-		var nome = "George Victor de Souza Alves";
+		var nome = "George";
+		var sobrenome = "Alves";
 		var nasc = "29/01/1992";
 
 		// Dados fornecidos pelo usuario
 		var nome_input = document.getElementById('name').value;
+		var sobrenome_input = document.getElementById('sobrenome').value;
 		var data_nascimento = document.getElementById('dt_nasc').value;
+		var data_prisao = document.getElementById('dt_pris').value;
+		var num_cel = document.getElementById('num_cel').value;
+		var reg = document.getElementById('reg').value;
 
-		if(nome.toLowerCase() == nome_input.toLowerCase() && data_nascimento == nasc)
+		if(nome.toLowerCase() == nome_input.toLowerCase()/* && data_nascimento == nasc*/)
 		{
-			window.location.assign("ficha.html");
+			window.location.assign("resultados/ficha.html");
 		}
 		else
 		{
-			window.location.assign("not_found.html");
+			window.location.assign("resultados/not_found.html");
 		}
 	}
 </script>
