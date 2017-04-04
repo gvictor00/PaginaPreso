@@ -21,8 +21,8 @@
 	</header>
 	<section>
 		<table>
-			<h2>Informações do detento</h2>
-			<h5>*Informações obrigatórias</h5>
+			<h2 id="det_inf">Informações do detento</h2>
+			<h5 id="info">*Informações obrigatórias</h5>
 			<br>
 			<!-- 
 				INFORMAÇÕES QUE EU PRECISO COLOCAR.
@@ -42,37 +42,38 @@
 			<form>
 				<tr>
 					<td>
-						<label for="reg">Numero do Registro*:</label><br>
+						<label for="reg">Numero do detento/Prisioner number*:</label><br>
 						<input type="text" name="reg" id="reg" placeholder="Número do processo">
-						<br><br>
+						<br>
 					</td>
 					<td>
-						<label for="dt_pris">Data da prisão*:</label>
+						<label for="dt_pris">Data da prisão/Detention day*:</label>
 						<br>
 						<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa">
 						<br>
+					</td>
+					<td>
+						<label for="num_cel">Número da cela/Jail number*:</label>
 						<br>
+						<input type="text" name="num_cel" id="num_cel" placeholder="XXX">
 					</td>
 				</tr>
+
 				<tr>
 					<td>
-						<label for="nome">Nome*:</label>					<br>
-						<input type="text" name="nome" size="40" id="name" placeholder="Digite o nome completo">
-						<br><br>	
+						<label for="nome">Nome/First name*:</label>	
+						<br>
+						<input type="text" name="nome" size="40" id="name" placeholder="Digite o primeiro nome">
 					</td>
 					<td>
-						<label for="dt_nasc">Data de nascimento*:</label>
+						<label for="sobrenome">Sobrenome/Last name*</label>
+						<br>
+						<input type="text" name="sobrenome" id="sobrenome" placeholder="Ditige o sobrenome">
+					</td>
+					<td>
+						<label for="dt_nasc">Data de nascimento/Birthday*:</label>
 						<br>
 						<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa">
-						<br><br>
-					</td>
-					<td>
-						<label for="genero">Genero*:</label>
-						<br>
-						<select name="genero" id="genero" >
-							<option value = "f">Feminino</option>
-							<option value = "m">Masculino</option>
-						</select>
 						<br><br>
 					</td>
 				</tr>
@@ -91,12 +92,21 @@
 						<br>
 						<br>
 					</td>
+					<td>
+						<label for="genero">Genero/Gender:</label>
+						<br>
+						<select name="genero" id="genero" >
+							<option value = "f">Feminino</option>
+							<option value = "m">Masculino</option>
+						</select>
+						<br><br>
+					</td>
 				</tr>
 
 				<tr>
 					<td>
 						<label for="end">Endereço:</label><br>
-						<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "60">
+						<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "40">
 						<br><br>
 					</td>
 					<td>
@@ -114,8 +124,8 @@
 				<!-- Botão de submit -->
 				<tr>
 					<td>
-						<br><br>
-						<button type="button" name="submit" onclick="check()"><h2>Buscar!</h2></button>
+						<br>
+						<button type="button" name="submit" onclick="check()"><h2>Buscar/Search</h2></button>
 					</td>
 				</tr>
 
