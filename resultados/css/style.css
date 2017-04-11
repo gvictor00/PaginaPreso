@@ -1,5 +1,13 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
 *{
 	margin: 0 auto 0 auto;
+	text-align: left;
 }
 
 label{
@@ -25,4 +33,58 @@ h5{
 	font-weight: bold;
 	color: #FF0000;
 
+}
+
+#container{
+	width: 960px;
+}
+
+#menu{
+	display:block;
+	float:left;
+	clear:both;
+	width:960px;
+	height:50px;
+	border: solid 1px;
+}
+
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin-left:auto;
+	width:960px;
+}
+
+#menu li {
+	list-style: none;
+	padding: 0px;	
+	display: inline; 
+	
+}
+
+#menu a {
+	float: left;
+	height: 36px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 18px;
+	font-size: 15px;
+	padding-left:13px;
+	padding-right:13px;
+	
+}
+
+#menu a:hover{
+	color:#86AEF9;
+}
+
+footer
+{
+	text-align: center;
+	color: #000000;
+	margin: 20px;
+	padding: 10px 0 10px 0;
 }

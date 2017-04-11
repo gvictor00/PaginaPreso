@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="resultados/css/style.css">
+	<link rel="stylesheet" href="resultados/css/style.css">
 	<title>Sistema de busca de presos</title>
 </head>
 <body>
@@ -18,12 +18,23 @@
 			</tr>
 		</table>
 		<hr>
-	</header>
-	<section>
-		<table>
-			<h2 id="det_inf">Informações do detento</h2>
-			<h5 id="info">*Informações obrigatórias</h5>
-			<br>
+	</header> <!-- Header ends -->
+
+	<div id="container">
+		<nav id="menu">
+			<ul>
+				<li class="menuitem"><a href="index.html">Search</a></li>
+				<li class="menuitem"><a href="index.html">About</a></li>
+				<li class="menuitem"><a href="index.html">News</a></li>
+				<li class="menuitem"><a href="index.html">Expertise</a></li>
+			</ul>
+		</nav><!-- Menu ends -->
+
+		<section id="pesquisa">
+			<table>
+				<h2 id="det_inf">Informações do detento</h2>
+				<h5 id="info">*Informações obrigatórias</h5>
+				<br>
 			<!-- 
 				INFORMAÇÕES QUE EU PRECISO COLOCAR.
 				- NOME / FIRST NAME
@@ -68,7 +79,7 @@
 					<td>
 						<label for="sobrenome">Sobrenome/Last name*</label>
 						<br>
-						<input type="text" name="sobrenome" id="sobrenome" placeholder="Ditige o sobrenome">
+						<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome">
 					</td>
 					<td>
 						<label for="dt_nasc">Data de nascimento/Birthday*:</label>
@@ -120,20 +131,23 @@
 						<br><br>
 					</td>
 				</tr>
+			</form> <!-- Form ends -->
 
-				<!-- Botão de submit -->
-				<tr>
-					<td>
-						<br>
-						<button type="button" name="submit" onclick="check()"><h2>Buscar/Search</h2></button>
-					</td>
-				</tr>
-
-			</form>
+			<!-- Botão de submit -->
+			<tr>
+				<td>
+					<br>
+					<button type="button" name="submit" onclick="check()"><h2>Buscar/Search</h2></button>
+				</td>
+			</tr>
 		</table>
-	</section>
-	<script type="text/javascript">
-		function check(){
+	</section> <!-- Pesquisa ends -->
+</div> <!-- Container ends -->
+<footer>
+	Copyright 2017 Interpol System
+</footer>
+<script type="text/javascript">
+	function check(){
 
 		// Dados do criminoso
 		var nome = "George";
