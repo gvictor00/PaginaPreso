@@ -54,51 +54,44 @@
 			<form>
 				<tr>
 					<td>
-						<label for="reg">Numero do detento/Prisioner number*:</label><br>
-						<input type="text" name="reg" id="reg" placeholder="Número do processo">
+						<label for="reg">NÚMERO DO DETENTO/PRISIONER NUMBER*:</label><br>
+						<input type="text" name="reg" id="reg" placeholder="Número do processo" required>
 						<br>
 					</td>
 					<td>
-						<label for="dt_pris">Data da prisão/Detention day*:</label>
+						<label for="dt_pris">DATA DA DETENÇÃO/DATE OF DETENTION*:</label>
 						<br>
-						<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa">
+						<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa" required>
 						<br>
 					</td>
 					<td>
-						<label for="num_cel">Número da cela/Jail number*:</label>
+						<label for="num_cel">NÚMERO DA CELA/JAIL NUMBER*:</label>
 						<br>
-						<input type="text" name="num_cel" id="num_cel" placeholder="XXX">
+						<input type="text" name="num_cel" id="num_cel" placeholder="XXX" required>
 					</td>
 				</tr>
 
 				<tr>
 					<td>
-						<label for="nome">Nome/First name*:</label>
+						<label for="nome">NOME/FIRST NAME*:</label>
 						<br>
-						<input type="text" name="nome" size="40" id="name" placeholder="Digite o primeiro nome">
+						<input type="text" name="nome" size="40" id="name" placeholder="Digite o primeiro nome" required>
 					</td>
 					<td>
-						<label for="sobrenome">Sobrenome/Last name*</label>
+						<label for="sobrenome">SOBRENOME/LAST NAME*:</label>
 						<br>
-						<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome">
+						<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome" required>
 					</td>
 					<td>
-						<label for="dt_nasc">Data de nascimento/Birthday*:</label>
+						<label for="dt_nasc">DATA DE NASCIMENTO/DATE OF BIRTH*:</label>
 						<br>
-						<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa">
+						<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa" required>
 						<br><br>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label for="cpf">CPF:</label>
-						<br>
-						<input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
-						<br>
-						<br>
-					</td>
-					<td>
-						<label for="rg">RG:</label>
+						<label for="rg">ID/RG:</label>
 						<br>
 						<input type="text" name="rg" id="rg" placeholder="xxxxxxx">
 						<br>
@@ -117,17 +110,17 @@
 
 				<tr>
 					<td>
-						<label for="end">Endereço:</label><br>
+						<label for="end">ADDRESS/ENDEREÇO:</label><br>
 						<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "40">
 						<br><br>
 					</td>
 					<td>
-						<label for="comp">Complemento:</label><br>
+						<label for="comp">COMPLELEMT/COMPLEMENTO:</label><br>
 						<input type="text" name="comp" id="comp" placeholder="Numero/Apartamento" size = "40">
 						<br><br>
 					</td>
 					<td>
-						<label for="cid">Cidade:</label><br>
+						<label for="cid">CITY/CIDADE:</label><br>
 						<input type="text" name="cid" id="comp" placeholder="Cidade">
 						<br><br>
 					</td>
@@ -151,19 +144,28 @@
 	function check(){
 
 		// Dados do criminoso
-		var nome = "George";
-		var sobrenome = "Alves";
-		var nasc = "29/01/1992";
+		var nome = "Andrew";
+		var sobrenome = "White";
+		var nasc = "22/10/1958";
+		var dt_det = "05/05/2002";
+		var num_pris = "008537";
+		var num_cel = "015-F";
 
 		// Dados fornecidos pelo usuario
 		var nome_input = document.getElementById('name').value;
 		var sobrenome_input = document.getElementById('sobrenome').value;
 		var data_nascimento = document.getElementById('dt_nasc').value;
 		var data_prisao = document.getElementById('dt_pris').value;
-		var num_cel = document.getElementById('num_cel').value;
+		var num_cel_input = document.getElementById('num_cel').value;
 		var reg = document.getElementById('reg').value;
 
-		if(nome.toLowerCase() == nome_input.toLowerCase()/* && data_nascimento == nasc*/)
+		if(nome.toLowerCase() == nome_input.toLowerCase() 
+			&& sobrenome.toLowerCase() == sobrenome_input.toLowerCase()
+			&& data_nascimento == nasc
+			&& dt_det == data_prisao
+			&& num_pris == reg
+			&& num_cel == num_cel_input
+			)
 		{
 			window.location.assign("resultados/ficha.html");
 		}
