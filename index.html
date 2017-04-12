@@ -23,20 +23,20 @@
 	</header> <!-- Header ends -->
 
 	<div id="container">
-		<nav id="menu">
+		<nav id="menu" style="margin-top: 45px;">
 			<ul>
 				<li class="menuitem"><a href="index.html">Search</a></li>
 				<li class="menuitem"><a href="index.html">About</a></li>
 				<li class="menuitem"><a href="index.html">News</a></li>
 				<li class="menuitem"><a href="index.html">Expertise</a></li>
 			</ul>
-		</nav><!-- Menu ends -->
+		</nav>
 
 		<section id="pesquisa">
-			<table>
-				<h2 id="det_inf">Informações do detento</h2>
-				<h5 id="info">*Informações obrigatórias</h5>
-				<br>
+
+			<div class="title"><h2 id="det_inf">Informações do detento</h2></div>
+			<h5 id="info">*Informações obrigatórias</h5>
+			<table id="search-form">
 			<!--
 				INFORMAÇÕES QUE EU PRECISO COLOCAR.
 				- NOME / FIRST NAME
@@ -52,90 +52,84 @@
 				- OBSERVAÇÕES / COMMENTS
 				Ainda será definido
 			-->
-			<form>
-				<tr>
-					<td>
-						<label for="reg">NÚMERO DO DETENTO/PRISIONER NUMBER*:</label><br>
-						<input type="text" name="reg" id="reg" placeholder="Número do processo" required>
-						<br>
-					</td>
-					<td>
-						<label for="dt_pris">DATA DA DETENÇÃO/DATE OF DETENTION*:</label>
-						<br>
-						<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa" required>
-						<br>
-					</td>
-					<td>
-						<label for="num_cel">NÚMERO DA CELA/JAIL NUMBER*:</label>
-						<br>
-						<input type="text" name="num_cel" id="num_cel" placeholder="XXX" required>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<label for="nome">NOME/FIRST NAME*:</label>
-						<br>
-						<input type="text" name="nome" size="40" id="name" placeholder="Digite o primeiro nome" required>
-					</td>
-					<td>
-						<label for="sobrenome">SOBRENOME/LAST NAME*:</label>
-						<br>
-						<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome" required>
-					</td>
-					<td>
-						<label for="dt_nasc">DATA DE NASCIMENTO/DATE OF BIRTH*:</label>
-						<br>
-						<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa" required>
-						<br><br>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="rg">ID/RG:</label>
-						<br>
-						<input type="text" name="rg" id="rg" placeholder="xxxxxxx">
-						<br>
-						<br>
-					</td>
-					<td>
-						<label for="genero">Genero/Gender:</label>
-						<br>
-						<select name="genero" id="genero" >
-							<option value = "f">Feminino</option>
-							<option value = "m">Masculino</option>
-						</select>
-						<br><br>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<label for="end">ADDRESS/ENDEREÇO:</label><br>
-						<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "40">
-						<br><br>
-					</td>
-					<td>
-						<label for="comp">COMPLELEMT/COMPLEMENTO:</label><br>
-						<input type="text" name="comp" id="comp" placeholder="Numero/Apartamento" size = "40">
-						<br><br>
-					</td>
-					<td>
-						<label for="cid">CITY/CIDADE:</label><br>
-						<input type="text" name="cid" id="comp" placeholder="Cidade">
-						<br><br>
-					</td>
-				</tr>
-			</form> <!-- Form ends -->
-
-			<!-- Botão de submit -->
 			<tr>
 				<td>
+					<label for="reg">NÚMERO DO DETENTO/PRISIONER NUMBER*:</label><br>
+					<input type="text" name="reg" id="reg" placeholder="Número do processo" required>
 					<br>
-					<button type="button" name="submit" onclick="check()"><h2>Buscar/Search</h2></button>
+				</td>
+				<td>
+					<label for="dt_pris">DATA DA DETENÇÃO/DATE OF DETENTION*:</label>
+					<br>
+					<input type="text" name="dt_pris" id = "dt_pris" placeholder="dd/mm/aaaa" required>
+					<br>
+				</td>
+				<td>
+					<label for="num_cel">NÚMERO DA CELA/JAIL NUMBER*:</label>
+					<br>
+					<input type="text" name="num_cel" id="num_cel" placeholder="XXX" required>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="nome">NOME/FIRST NAME*:</label>
+					<br>
+					<input type="text" name="nome" size="40" id="name" placeholder="Digite o primeiro nome" required>
+				</td>
+				<td>
+					<label for="sobrenome">SOBRENOME/LAST NAME*:</label>
+					<br>
+					<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome" required>
+				</td>
+				<td>
+					<label for="dt_nasc">DATA DE NASCIMENTO/DATE OF BIRTH*:</label>
+					<br>
+					<input type="text" name="dt_nasc" id="dt_nasc" placeholder="dd/mm/aaaa" required>
+					<br><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="rg">ID/RG:</label>
+					<br>
+					<input type="text" name="rg" id="rg" placeholder="xxxxxxx">
+					<br>
+					<br>
+				</td>
+				<td>
+					<label for="genero">Genero/Gender:</label>
+					<br>
+					<select name="genero" id="genero" >
+						<option value = "f">Feminino</option>
+						<option value = "m">Masculino</option>
+					</select>
+					<br><br>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="end">ADDRESS/ENDEREÇO:</label><br>
+					<input type="text" name="end" id="end" placeholder="Rua A, numero XXX" size = "40">
+					<br><br>
+				</td>
+				<td>
+					<label for="comp">COMPLELEMT/COMPLEMENTO:</label><br>
+					<input type="text" name="comp" id="comp" placeholder="Numero/Apartamento" size = "40">
+					<br><br>
+				</td>
+				<td>
+					<label for="cid">CITY/CIDADE:</label><br>
+					<input type="text" name="cid" id="comp" placeholder="Cidade">
+					<br><br>
 				</td>
 			</tr>
 		</table>
+		<div class="submit-area">
+			<!-- Botão de submit -->
+			<button class="submit" type="button" name="submit" onclick="check()"><h2>Buscar/Search</h2></button>
+		</div>
 	</section> <!-- Pesquisa ends -->
 </div> <!-- Container ends -->
 <footer>
@@ -160,7 +154,7 @@
 		var num_cel_input = document.getElementById('num_cel').value;
 		var reg = document.getElementById('reg').value;
 
-		if(nome.toLowerCase() == nome_input.toLowerCase() 
+		if(nome.toLowerCase() == nome_input.toLowerCase()
 			&& sobrenome.toLowerCase() == sobrenome_input.toLowerCase()
 			&& data_nascimento == nasc
 			&& dt_det == data_prisao
