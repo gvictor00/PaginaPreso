@@ -17,6 +17,17 @@ div.title {
   margin-bottom: 20px;
 }
 
+div#nome {
+	font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 50px;
+  align-items: center;
+}
+
 div.img-area {
 	width: 100%;
 	display: flex;
@@ -64,6 +75,7 @@ h5{
 	width:960px;
 	height:50px;
 	border: solid 1px;
+	margin-top: 15px;
 }
 
 #menu ul {
