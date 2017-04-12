@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Sistema de busca de presos</title>
 </head>
@@ -34,7 +35,7 @@
 			<div id="info">
 				<h2 id="nome">ANDREW WHITE</h2>
 				<table id="identif">
-					<caption><h2>INFORMAÇÕES DE IDENTIDADE / IDENTITY PARTICULARS</h2></caption>
+					<div class="title"><h2>INFORMAÇÕES DE IDENTIDADE / IDENTITY PARTICULARS</h2></div>
 					<tr>
 						<td>
 							<b>NOME/FIRST NAME:</b>
@@ -87,7 +88,7 @@
 				<br/>
 
 				<table id="caract">
-					<caption><h2>CARACTERÍSTICAS FÍSICAS / PHYSICAL DESCRIPTION</h2></caption>
+					<div class="title"><h2>CARACTERÍSTICAS FÍSICAS / PHYSICAL DESCRIPTION</h2></div>
 					<tr>
 						<td>
 							<b>ALTURA/HEIGHT:</b>
@@ -132,23 +133,13 @@
 				<br/>
 
 				<table id="crimes">
-					<caption><h2>CRIMES/CHARGES</h2></caption>
+					<div class="title"><h2>CRIMES/CHARGES</h2></div>
 					<tr>
-						<td>
-							<b>CRIMES/CHARGES:</b>
-						</td>
 						<td>
 							<a>Assalto ao Banco Central / Bank robbery</a>
 						</td>
-					</tr>				
+					</tr>
 				</table>
-
-				<div class="wrapper">
-					<form action="index.html">
-						<button>Realizar nova busca</button>
-					</form>
-				</div>
-
 			</div> <!-- Info ends -->
 
 			<div id="fotos">
@@ -165,6 +156,16 @@
 					PROSECUTED ON 05/05/2002 (FLAGRANT PRISON - Article 157). Process No. 410.2002.000181-7 with transit SENTENCED / REG. CLOSED in article 157 with life imprisonment. In May 2002, detainee ANDREW WHITE, known as "Professor White", was arrested on charges of assault on the Central Bank of Brazil. This generated a loss of 215 million reais to the public coffers. His conviction was life in prison.
 
 				</section>
+			</div>
+
+			</br>
+			</br>
+			</br>
+
+			<div class="wrapper">
+				<form action="index.html">
+					<button>Realizar nova busca</button>
+				</form>
 			</div>
 		</div>
 	</body>
