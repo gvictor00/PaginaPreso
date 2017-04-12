@@ -1,76 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="css/style.css">
 	<title>Sistema de busca de presos</title>
-	<table>
-		<tr>
-			<td>
-				<img src="policia-federal.gif" alt="Policia Federal" height="140">
-			</td>
-			<td>
-				<h1>Policia Federal</h1>
-				<h4>MINISTÉRIO DA JUSTIÇA E SEGURANÇA PÚBLICA</h4>
-			</td>
-		</tr>
-	</table>
-	<hr>
 </head>
 <body>
-	<div id = "container" style="witdh:100%">
-		<div id="left" style="float:left; width:50%;">
-			<table>
-				<h2>Informações do detento</h2>
-				<tr>
-					<td>
-						<b>Nome:</b> 
-						<p>José da Silva Chavier</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Apelido:</b> 
-						<p>Zé Pikeno</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Nascimento:</b> 
-						<p>19/08/1987</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Ultimo endereço registrado:</b> 
-						<p>Rua A, numero 1 - Bairro Nobre, cidade Chique</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Crime cometido:</b>
-						<p>Art. 157 - Subtrair coisa móvel alheia, para si ou para outrem, mediante grave ameaça ou violência a pessoa, ou depois de havê-la, por qualquer meio, reduzido à impossibilidade de resistência</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Mais informações:</b>
-						<p>Não tenho o que dizer</p>
-					</td>
-				</tr>
-			</table>
+	<header>
+		<table>
+			<tr>
+				<td>
+					<img src="policia-federal.gif" alt="Policia Federal" height="140">
+				</td>
+				<td>
+					<h1>Policia Federal</h1>
+					<h4>MINISTÉRIO DA JUSTIÇA E SEGURANÇA PÚBLICA</h4>
+				</td>
+			</tr>
+		</table>
+		<hr>
+	</header> <!-- Header ends -->
 
-			<div class="wrapper">
-				<form action="index.html">
-					<button>Realizar nova busca</button>
-				</form>
+	<div id="container">
+		<nav id="menu">
+			<ul>
+				<li class="menuitem"><a href="index.html">Search</a></li>
+				<li class="menuitem"><a href="index.html">About</a></li>
+				<li class="menuitem"><a href="index.html">News</a></li>
+				<li class="menuitem"><a href="index.html">Expertise</a></li>
+			</ul>
+		</nav><!-- Menu ends -->
+
+		<div id = "container" style="witdh:100%">
+			<div id="info">
+				<h2 id="nome">ANDREW WHITE</h2>
+				<table id="identif">
+					<caption><h2>INFORMAÇÕES DE IDENTIDADE / IDENTITY PARTICULARS</h2></caption>
+					<tr>
+						<td>
+							<b>NOME/FIRST NAME:</b>
+						</td>
+						<td>
+							<a>ANDREW</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>SOBRENOME/LAST NAME:</b>
+						</td>
+						<td>
+							<a>WHITE</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>DATA DE NASCIMENTO/DATE OF BIRTH:</b>
+						</td>
+						<td>
+							<a>22/10/1958 (DD/MM/YYYY)</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>DATA DA DETENÇÃO/DATE OF DETENTION:</b>
+						</td>
+						<td>
+							<a>05/05/2002 (DD/MM/YYYY)</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>NÚMERO DA CELA/JAIL NUMBER:</b>
+						</td>
+						<td>
+							<a>015-F</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>NÚMERO DO DETENTO/PRISIONER NUMBER:</b>
+						</td>
+						<td>
+							<a>008537</a>
+						</td>
+					</tr>
+				</table> <!-- Identificação ends -->
+				<br/>
+
+				<table id="caract">
+					<caption><h2>CARACTERÍSTICAS FÍSICAS / PHYSICAL DESCRIPTION</h2></caption>
+					<tr>
+						<td>
+							<b>ALTURA/HEIGHT:</b>
+						</td>
+						<td>
+							<a>1.80 m</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>PESO/WEIGHT:</b>
+						</td>
+						<td>
+							<a>87 Kg</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>ALTURA/HEIGHT:</b>
+						</td>
+						<td>
+							<a>1.80m</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>COR DOS OLHOS/HAIR COLOUR:</b>
+						</td>
+						<td>
+							<a>CARECA/BALD</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>COR DOS OLHOS/EYES COLOUR:</b>
+						</td>
+						<td>
+							<a>MARROM/BROWN</a>
+						</td>
+					</tr>
+				</table> <!-- Caracteristicas ends -->
+				<br/>
+
+				<table id="crimes">
+					<caption><h2>CRIMES/CHARGES</h2></caption>
+					<tr>
+						<td>
+							<b>CRIMES/CHARGES:</b>
+						</td>
+						<td>
+							<a>Assalto ao Banco Central / Bank robbery</a>
+						</td>
+					</tr>				
+				</table>
+
+				<div class="wrapper">
+					<form action="index.html">
+						<button>Realizar nova busca</button>
+					</form>
+				</div>
+
+			</div> <!-- Info ends -->
+
+			<div id="fotos">
+				<table>
+					<h2>FOTOS/PHOTOS</h2>
+					<img src="foto.jpg" alt="Zé Pequeno" height="400">
+				</table>
+			</div> <!-- Fotos ends -->
+
+			<div id="comments">
+				<section>
+					<h2>OBSERVAÇÕES / COMMENTS:</h2><br>
+					PRESO em 05/05/2002 (AUTO DE PRISAO EM FLAGRANTE – Artigo 157). Processo Nº 410.2002.000181-7 com trânsito SENTENCIADO/REG. FECHADO no artigo 157 com pena de prisão perpétua. Em Maio de 2002, o detento ANDREW WHITE, conhecido como “Professor White” foi preso acusado de assalto ao Banco Central do Brasil. O que gerou um prejuízo de 215 milhões de reais aos cofres públicos. Sua condenação foi de prisão perpétua.
+					PROSECUTED ON 05/05/2002 (FLAGRANT PRISON - Article 157). Process No. 410.2002.000181-7 with transit SENTENCED / REG. CLOSED in article 157 with life imprisonment. In May 2002, detainee ANDREW WHITE, known as "Professor White", was arrested on charges of assault on the Central Bank of Brazil. This generated a loss of 215 million reais to the public coffers. His conviction was life in prison.
+
+				</section>
 			</div>
-
 		</div>
-		<div id="right" style="float:right; width: 50%;">
-			<table>
-				<h2>Foto do meliante</h2>
-				<img src="foto.jpg" alt="Zé Pequeno" height="400">
-			</table>
-		</div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>
