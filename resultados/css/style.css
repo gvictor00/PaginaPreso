@@ -8,24 +8,24 @@ body{
 
 div.title {
 	width: 100%;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  background-color: #b3b3b3;
-  margin-top: 10px;
-  margin-bottom: 20px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	background-color: #b3b3b3;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 div#nome {
 	font-size: 30px;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  height: 50px;
-  align-items: center;
+	font-weight: bold;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	height: 50px;
+	align-items: center;
 }
 
 div.img-area {
@@ -36,16 +36,21 @@ div.img-area {
 
 .arrow-left {
 	width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  float: left;
-  border-right:10px solid #b3b3b3;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	float: left;
+	border-right:10px solid #b3b3b3;
 }
-
+.not-found{
+	display: block;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
 form#back {
 	display: inline-block;
-  width: 100%;
+	width: 100%;
 	margin-top: 10px;
 }
 
@@ -87,10 +92,14 @@ td{
 
 h5{
 	font-size: 11px;
-  padding-top: 5px;
-  font-weight: bold;
-  color: #FF0000;
-  margin-left: 25px;
+	padding-top: 5px;
+	font-weight: bold;
+	color: #FF0000;
+	margin-left: 25px;
+}
+
+#not-found{
+	padding: 5px;
 }
 
 #search-form input {

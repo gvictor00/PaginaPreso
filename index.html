@@ -25,16 +25,18 @@
 		<div id="container">
 			<nav id="menu" style="margin-top: 45px;">
 				<ul>
-					<li class="menuitem"><a href="index.html">Search</a></li>
-					<li class="menuitem"><a href="index.html">About</a></li>
-					<li class="menuitem"><a href="index.html">News</a></li>
+					<li class="menuitem"><a href="index.html">Buscar</a></li>
+					<li class="menuitem"><a href="index.html">Sobre</a></li>
+					<li class="menuitem"><a href="index.html">Noticias</a></li>
 					<li class="menuitem"><a href="index.html">Expertise</a></li>
 				</ul>
 			</nav>
 
 			<section id="pesquisa">
 
-				<div class="title"><h2 id="det_inf">Informações do detento</h2></div>
+				<div class="title">
+					<h2 id="det_inf">Informações do detento</h2>
+				</div>
 				<h5 id="info">*Informações obrigatórias</h5>
 				<form>
 					<table id="search-form">
@@ -91,42 +93,6 @@
 					<br>
 				</td>
 			</tr>
-			<tr>
-				<td>
-					<label for="rg">ID/RG:</label>
-					<br>
-					<input type="text" name="rg" id="rg" placeholder="xxxxxxx">
-					<br>
-					<br>
-				</td>
-				<td>
-					<label for="genero">Genero/Gender:</label>
-					<br>
-					<select name="genero" id="genero" >
-						<option value = "f">Feminino</option>
-						<option value = "m">Masculino</option>
-					</select>
-					<br><br>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<label for="end">ADDRESS/ENDEREÇO:</label><br>
-					<input type="text" name="end" id="end" size = "40">
-					<br><br>
-				</td>
-				<td>
-					<label for="comp">COMPLELEMT/COMPLEMENTO:</label><br>
-					<input type="text" name="comp" id="comp" size = "40">
-					<br><br>
-				</td>
-				<td>
-					<label for="cid">CITY/CIDADE:</label><br>
-					<input type="text" name="cid" id="comp">
-					<br><br>
-				</td>
-			</tr>
 		</table>
 	</form>
 	<div class="submit-area">
@@ -156,19 +122,12 @@
 		var num_cel_input = document.getElementById('num_cel').value;
 		var reg = document.getElementById('reg').value;
 
-		console.log("Nome:"+nome_input);
-		console.log("Sobrenome:"+sobrenome_input);
-		console.log("Data de Nascimento:"+data_nascimento);
-		console.log("Data da Prisão:"+data_prisao);
-		console.log("Número da cela:"+num_cel_input);
-		console.log("Número do preso:"+reg);
-		alert();
 		if(nome.toLowerCase() == nome_input.toLowerCase()
-			/*&& sobrenome.toLowerCase() == sobrenome_input.toLowerCase()
+			&& sobrenome.toLowerCase() == sobrenome_input.toLowerCase()
 			&& data_nascimento == nasc
 			&& dt_det == data_prisao
 			&& num_pris == reg
-			&& num_cel == num_cel_input*/
+			&& num_cel == num_cel_input
 			)
 		{
 			window.location.assign("resultados/ficha.html");
