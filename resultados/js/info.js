@@ -3,10 +3,10 @@ function check(){
 		// Dados do criminoso
 		var nome = "Andrew";
 		var sobrenome = "White";
-		var nasc = "22/10/1958";
-		var dt_det = "05/05/2002";
-		var num_pris = "008537";
-		var num_cel = "015-F";
+		var nasc = "29/10/1952";
+		var dt_det = "05/08/1992";
+		var num_pris = "6484";
+		var num_cel = "45";
 
 		// Dados fornecidos pelo usuario
 		var nome_input = document.getElementById('name').value;
